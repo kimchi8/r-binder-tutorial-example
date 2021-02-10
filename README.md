@@ -1,3 +1,3 @@
 # r-binder-tutorial-example
-Binder tutorial
+RStudio and Binder tutorial 
 
