@@ -1,0 +1,26 @@
+---
+title: "Example_file"
+output: 
+  learnr::tutorial:
+    progressive: true
+    allow_skip: true
+runtime: shiny_prerendered
+---
+
+
+```{r setup, include=FALSE}
+library(learnr)
+library(gradethis)
+tutorial_options(exercise.checker= gradethis::grade_learnr)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Type in something that will equal 10.
+```{r exercise_1, exercise = TRUE}
+
+```
+
+```{r exercise_1-check}
+grade_result(pass_if(~identical(.result, 10)))
+```
+
